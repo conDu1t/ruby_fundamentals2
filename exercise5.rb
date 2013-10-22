@@ -1,9 +1,10 @@
 puts "Give me a temperature in Fahrenheit"
 
-fahr = gets.chomp
+fahr = gets.chomp.to_i
 
 def convert(fahr)
-	(c =(fahr - 32) * 5/9)
+	c=(fahr-32)*5/9
+  c
 end
 
-print fahr.convert
+puts "The temperature in celsius is #{convert(fahr)}"
