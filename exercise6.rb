@@ -19,3 +19,13 @@ puts grocery_list[1]
 grocery_list.sort.each do |x|
   puts "* #{x}"
 end
+
+def goodbye_salmon
+  ["salmon"]
+end
+
+new_list = grocery_list - goodbye_salmon
+
+new_list.each do |x|
+  puts "* #{x}"
+end
