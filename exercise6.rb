@@ -20,10 +20,4 @@ grocery_list.sort.each do |x|
   puts "* #{x}"
 end
 
-
-grocery_list.sort.each do |x|
-  if x == "salmon"
-    delete
-  else
-    puts "* #{x}"
-end
+grocery_list.map { |x| x - "salmon" }
