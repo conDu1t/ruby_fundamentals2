@@ -19,5 +19,3 @@ puts grocery_list[1]
 grocery_list.sort.each do |x|
   puts "* #{x}"
 end
-
-grocery_list.map { |x| x - "salmon" }
